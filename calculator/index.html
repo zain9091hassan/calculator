@@ -1,0 +1,256 @@
+<! DOCTYPE html>  
+<html>  
+    <head>  
+    <meta charset="utf-8">  
+    <title>  
+         zain hassan calculator 
+    </title>  
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+    <!-- CSS property to create interactive  
+        calculator interface -->  
+    <style>  
+    html {  
+  height: 100vh;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  background-color: bisque;  
+  background-image: linear-gradient(315deg, #2d3436 0%, black 74%);  
+  font-family: 'Cookie', cursive;  
+}  
+
+input[type=button] {  
+  width: 80px;  
+  height: 80px;  
+  float: left;  
+  padding: 0;  
+  margin: 5px;  
+  box-sizing: border-box;  
+  background: grey;  
+  border: none;  
+  font-size: 30px;  
+  line-height: 30px;  
+  border-radius: 10%;  
+  font-weight: 1000;  
+  color: #21a;  
+  cursor: pointer;    
+}  
+input[type=text] {  
+  width: 270px;  
+  height: 60px;  
+  float: left;  
+  padding: 0;  
+  box-sizing: border-box;  
+  border: none;  
+  background: none;  
+  color: gainsboro;  
+  text-align: right;  
+  font-weight: 700;  
+  font-size: 60px;  
+  line-height: 60px;  
+  margin: 0 25px;  
+  }  
+.calculator {  
+  background-color: grey;  
+  box-shadow: 0px 0px 0px 10px gainsboro;  
+  border: 5px solid black;  
+  border-radius: 10px;  
+}  
+#display {  
+  height: 80px; 
+  width: 300px; 
+  text-align: right;  
+  background-color: black;  
+  border: 3px solid white;  
+  font-size: 30px;  
+  left: 2px;  
+  top: 2px;  
+  color: grey;  
+}  
+.btnTop {  
+  color: blue;  
+  background-color: #6f6f6f;  
+  font-size: 14px;  
+  margin: auto;  
+  width: 50px;  
+  height: 25px;  
+}  
+
+
+    </style>  
+</head>  
+<body> 
+<div style="@media screen and(min-width: 480px;) {
+  #query {width: 200px;float: left;}
+}">
+  <div class="query">
+     
+    <form name="Calculator" class = "calculator" >  
+      <table border="8" align="center" cellpadding="32" cellspacing="12" bgcolor="#c0c0c0">  
+      <tr>  
+      <td>  
+      <input type="text" name="Input" Size="35" id="display">  
+      <br>  
+      </td>  
+      </tr>  
+      <tr>  
+      <td>  
+      <input class="tub" type="button" name = "one" style="font-size:30px" value=" 1 " OnClick="Calculator.Input.value += '1'" onmouseover ="xyz ()" onmouseout="abc()">  
+      <input class="bbb" type="button" name = "two" style = "font-size:30px" value=" 2 " OnCLick="Calculator.Input.value += '2'"  onmouseover ="bbb ()" onmouseout="ccc()" >  
+      <input class="ddd" type="button" name = "three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'" onmouseover ="ddd ()" onmouseout="eee()" >  
+      <input class="fff" type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += ' + '" onmouseover ="fff ()" onmouseout="ggg()">  
+      <br>  
+      <input class="hhh" type="button" name = "four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'" onmouseover ="hhh ()" onmouseout="iii()">  
+      <input class="jjj" type="button" name = "five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'" onmouseover ="jjj ()" onmouseout="kkk()">  
+      <input class="lll" type="button" name = "six" style="font-size:30px" value=" 6 " OnClick="Calculator.Input.value += '6'" onmouseover ="lll ()" onmouseout="mmm()">   
+      <input class="nnn" type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += ' - '" onmouseover ="nnn ()" onmouseout="ooo()">  
+      <br>  
+      <input class="ppp" type="button" name = "seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'" onmouseover ="ppp ()" onmouseout="qqq()">  
+      <input class="rrr" type="button" name = "eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'" onmouseover ="rrr ()" onmouseout="sss()">  
+      <input class="ttt" type="button" name = "nine" style="font-size:30px" value=" 9 " OnClick="Calculator.Input.value += '9'" onmouseover ="ttt ()" onmouseout="uuu()">  
+      <input class="zai" type="button" name = "mul" style="font-size:30px" value=" * "   
+      OnClick="Calculator.Input.value += ' * '"  onmouseover ="zai ()" onmouseout="aye()">  
+      <br>  
+      <input class="vvv" type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value = ''" onmouseover ="vvv ()" onmouseout="www()">  
+      <input class="xxx" type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'"onmouseover ="xxx ()" onmouseout="yyy()">  
+      <input class="zzz" type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)" onmouseover ="zzz ()" onmouseout="klm()">  
+      <input class="mno" type="button" name="div" style="font-size:30px" value=" / " OnClick="Calculator.Input.value += ' / '" onmouseover ="mno ()" onmouseout="pqr()">  
+      <br>  
+      </td>  
+        
+      </tr>  
+      </table>  
+      </form>  
+  </div>
+</div>
+</body> 
+<script>
+  function xyz() {
+    document.querySelector(".tub").style.backgroundColor = "lightgrey"
+  }
+
+ function abc() {
+  document.querySelector(".tub").style.backgroundColor = "grey"
+  }
+  function bbb() {
+    document.querySelector(".bbb").style.backgroundColor = "lightgrey"
+  }
+  function ccc() {
+    document.querySelector(".bbb").style.backgroundColor = "grey"
+  }
+
+
+  function ddd() {
+    document.querySelector(".ddd").style.backgroundColor = "lightgrey"
+  }
+
+ function eee() {
+  document.querySelector(".ddd").style.backgroundColor = "grey"
+  }
+  function fff() {
+    document.querySelector(".fff").style.backgroundColor = "lightgrey"
+  }
+  function ggg() {
+    document.querySelector(".fff").style.backgroundColor = "grey"
+  }
+
+
+  function hhh() {
+    document.querySelector(".hhh").style.backgroundColor = "lightgrey"
+  }
+
+ function iii() {
+  document.querySelector(".hhh").style.backgroundColor = "grey"
+  }
+  function jjj() {
+    document.querySelector(".jjj").style.backgroundColor = "lightgrey"
+  }
+  function kkk() {
+    document.querySelector(".jjj").style.backgroundColor = "grey"
+  }
+
+
+
+  function lll() {
+    document.querySelector(".lll").style.backgroundColor = "lightgrey"
+  }
+
+ function mmm() {
+  document.querySelector(".lll").style.backgroundColor = "grey"
+  }
+  function nnn() {
+    document.querySelector(".nnn").style.backgroundColor = "lightgrey"
+  }
+  function ooo() {
+    document.querySelector(".nnn").style.backgroundColor = "grey"
+  }
+
+
+
+
+  function ppp() {
+    document.querySelector(".ppp").style.backgroundColor = "lightgrey"
+  }
+
+ function qqq() {
+  document.querySelector(".ppp").style.backgroundColor = "grey"
+  }
+  function rrr() {
+    document.querySelector(".rrr").style.backgroundColor = "lightgrey"
+  }
+  function sss() {
+    document.querySelector(".rrr").style.backgroundColor = "grey"
+  }
+
+
+
+
+  function ttt() {
+    document.querySelector(".ttt").style.backgroundColor = "lightgrey"
+  }
+
+ function uuu() {
+  document.querySelector(".ttt").style.backgroundColor = "grey"
+  }
+  function vvv() {
+    document.querySelector(".vvv").style.backgroundColor = "lightgrey"
+  }
+  function www() {
+    document.querySelector(".vvv").style.backgroundColor = "grey"
+  }
+
+
+  function xxx() {
+    document.querySelector(".xxx").style.backgroundColor = "lightgrey"
+  }
+
+ function yyy() {
+  document.querySelector(".xxx").style.backgroundColor = "grey"
+  }
+  function zzz() {
+    document.querySelector(".zzz").style.backgroundColor = "lightgrey"
+  }
+  function klm() {
+    document.querySelector(".zzz").style.backgroundColor = "grey"
+  }
+
+
+
+  function mno() {
+    document.querySelector(".mno").style.backgroundColor = "lightgrey"
+  }
+  function pqr() {
+    document.querySelector(".mno").style.backgroundColor = "grey"
+  }
+
+  function zai() {
+    document.querySelector(".zai").style.backgroundColor = "lightgrey"
+  }
+  function aye() {
+    document.querySelector(".zai").style.backgroundColor = "grey"
+  }
+
+
+
+</script> 
+</html>    
